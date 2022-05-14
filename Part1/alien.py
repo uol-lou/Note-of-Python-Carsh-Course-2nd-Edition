@@ -16,6 +16,8 @@ alien_1['points'] = 9
 
 print(alien_1)
 
+
+
 # 一行一行运行
 alien_3 = {'x_position': 0 , 'y_position': 25 , 'speed': 'medium'}
 print(f"Original position : {alien_3['x_position']}")
