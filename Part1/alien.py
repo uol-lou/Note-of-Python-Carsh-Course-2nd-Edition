@@ -37,3 +37,11 @@ else :
 alien_3['x_position'] = alien_3['x_position'] + x_increment
 
 print(f"new position:{alien_3['x_position']}")
+
+# 删除键值
+
+alien_4 = {"color":"green","points":5}
+del alien_4["color"]
+print(alien_4)
+
+5
