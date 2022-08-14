@@ -44,4 +44,26 @@ alien_4 = {"color":"green","points":5}
 del alien_4["color"]
 print(alien_4)
 
-5
+#创建一个用于存储外星人的空列表
+aliens = []
+
+#创建30个绿色的外星人
+for alien_number in range (30):
+    new_alien = {"color":"green", "points" : 5, "speed":"slow" }
+    aliens.append(new_alien)
+
+for alien in aliens[:3]:  #:3表示前三个
+    if alien["color"] == "green": #==用于判断 返回Boolean值， = 用于赋值
+        alien["color"] = "yellow"
+        alien["speed"] = "medium"
+        alien["points"] = 10
+
+#显示前五个外星人
+for alien in aliens[:5]:
+    print(alien)
+print("完成")
+
+for alien in aliens[0:3]:
+    if alien["color"] == "green":
+        alien["color"] = "yellow"
+        alien
