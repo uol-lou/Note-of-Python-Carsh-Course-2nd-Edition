@@ -66,4 +66,4 @@ print("完成")
 for alien in aliens[0:3]:
     if alien["color"] == "green":
         alien["color"] = "yellow"
-        alien
+        alien["speed"] = "medium"
