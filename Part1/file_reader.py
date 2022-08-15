@@ -6,8 +6,17 @@ print(contents)
 # 这样就可以删除最后多出来的空行
 print(contents.rstrip())
 
-#逐行读取
+# 逐行读取
 filename = open('file.txt')
 for line in filename:
     print(line)
     print(line.rstrip())
+
+# writ写入模式，\n用来换行
+file2 = open("programming.txt", "w")
+file2.write("I love programming.\n")
+file2.write("I dont love durchfallen..\n")
+# a附加模式，不会先格式化文件再写入，而是在后面继续写
+file3 = open("programming.txt","a")
+file3.write("abc\n")
+file3.write("123\n")
