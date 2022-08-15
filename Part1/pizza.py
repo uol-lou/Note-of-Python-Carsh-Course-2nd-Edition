@@ -20,12 +20,27 @@ for crust, tropping in pizza.items():
 def make_pizza(*troppings):
     print(troppings)
 
+
 # 最终的实参会被封装到一个元组中
 make_pizza(1, 2, 3)
 make_pizza('a', 'b', 'c')
 
-#注意实参和任意数量实参的位置
+
+# 注意实参和任意数量实参的位置
 def make_pizza2(size, *tropping):
     print(size, tropping)
 
-make_pizza2(12,"a")
+
+make_pizza2(12, "a")
+
+
+# 创建任意数量的键值对型实参
+def build_profil(first, last, **user_info):
+    user_info["first_name"] = first
+    user_info["last_name"] = last
+    return user_info
+
+
+# **user_info创建的是名称值对，它会被收录到字典一个字典中
+user_profile = build_profil("albert", "einstein", local='abc', field='123')
+print(user_profile)
