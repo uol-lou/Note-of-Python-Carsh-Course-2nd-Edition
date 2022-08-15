@@ -18,3 +18,17 @@ def get_full_name(first_name, last_name, middle_name=""):
 print(get_full_name("Masaaki", "sakley"))
 
 
+# 传递列表
+def greeting(names):
+    # 自动识别列表并执行
+    for name in names:
+        msg = f"Hello,{name.title()}!"
+        print(msg)
+
+
+username = ["hanna", "joe", "lui"]
+greeting(username)
+# 切片表示方法
+greeting(username[:])
+
+
