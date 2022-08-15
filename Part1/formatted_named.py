@@ -17,5 +17,4 @@ def get_full_name(first_name, last_name, middle_name=""):
 
 print(get_full_name("Masaaki", "sakley"))
 
-#返回字典
-def
+
