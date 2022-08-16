@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 input_values = [1, 2, 3, 4, 5]
 squares = [1, 4, 9, 16, 25]
 
-# 使用plt库的内置样式
+# 使用plt库的内置样式 背景、模板
 plt.style.use("seaborn")
 
 # 变量fig表示整张图片，变量ax表示图片中的各个图表
