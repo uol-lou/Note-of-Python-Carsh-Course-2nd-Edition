@@ -58,4 +58,5 @@ with open(filename) as f:
     # 更改刻度、刻度标签和网格线的bot外观。
     ax.tick_params(axis="both", which="major", labelsize=16)
 
+
     plt.show()
