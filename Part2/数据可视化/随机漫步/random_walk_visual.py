@@ -11,7 +11,8 @@ while True:
 
     plt.style.use("classic")
 
-    fig, ax = plt.subplots()
+    # figsize = (16,9) 意为图片的长宽尺寸，单位为一英寸
+    fig, ax = plt.subplots(figsize=(16, 9))
     point_numbers = range(rw.num_point)
 
     # cmap告诉pyplot使用哪个颜色来映射，y值较小的为浅蓝色，y值较大的为深蓝色
