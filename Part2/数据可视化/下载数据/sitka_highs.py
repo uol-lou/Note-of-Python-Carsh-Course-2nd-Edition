@@ -48,8 +48,12 @@ with open(filename) as f:
     plt.style.use("seaborn")
     fig, ax = plt.subplots(figsize=(16, 9))
     ax.plot(dates, highs, c="red")
+    ax.plot(dates, lows, c='blue')
 
-    ax.set_title("Highst Tempuratur in 2018,7", fontsize=20)
+    # 设置两线之间之间的颜色，facecolor为之间的颜色，alpha为透明度，1为完全不透明
+    ax.fill_between(dates,highs,lows,facecolor = "green",alpha = 0.5)
+
+    ax.set_title("Tempuratur in 2018,7", fontsize=20)
     ax.set_xlabel("date", fontsize=10)
     ax.set_ylabel("Tempuratur(C)", fontsize=16)
     # 对x轴进行自动适应，目前情况会变成斜体
