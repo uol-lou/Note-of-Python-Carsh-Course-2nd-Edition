@@ -51,7 +51,7 @@ with open(filename) as f:
     ax.plot(dates, lows, c='blue')
 
     # 设置两线之间之间的颜色，facecolor为之间的颜色，alpha为透明度，1为完全不透明
-    ax.fill_between(dates,highs,lows,facecolor = "green",alpha = 0.5)
+    ax.fill_between(dates, highs, lows, facecolor="green", alpha=0.5)
 
     ax.set_title("Tempuratur in 2018,7", fontsize=20)
     ax.set_xlabel("date", fontsize=10)
@@ -61,6 +61,5 @@ with open(filename) as f:
     # Change the appearance of ticks, tick labels, and gridlines.
     # 更改刻度、刻度标签和网格线的bot外观。
     ax.tick_params(axis="both", which="major", labelsize=16)
-
 
     plt.show()
