@@ -2,7 +2,7 @@ from random import choice
 
 
 class RandomWalk:
-    def __init__(self, num_point=100):
+    def __init__(self, num_point=5000):
         self.num_point = num_point
 
         self.x_value = [0]
