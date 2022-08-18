@@ -35,3 +35,4 @@ y_axis_config = {"title": "Result_Frequency"}
 my_layout = Layout(title="Result of 1000 times",
                    xaxis=x_axis_config, yaxis=y_axis_config)
 offline.plot({"data": data, "layout": my_layout}, filename="d6.html")
+
