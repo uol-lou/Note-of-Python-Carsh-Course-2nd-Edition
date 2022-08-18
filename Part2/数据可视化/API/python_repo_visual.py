@@ -33,11 +33,12 @@ for repo_dict in repo_dicts:
 
 # 可视化
 # 添加自定义工具提示
+# 创建链接
 data = [{
     'type': 'bar',
     'x': repo_names,
     'y': repo_stars,
-    # 说明“hovertext”
+    # 光标放上去之后的说明提示“hovertext”
     'hovertext':labels,
     # 透明度
     'opacity':0.6,
